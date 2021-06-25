@@ -1,0 +1,153 @@
+% !TEX program = pdflatex
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+  \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+  }
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{5pt}
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newenvironment{resumeList}{\begin{itemize}[leftmargin=*]}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+      #1 \vspace{-4pt}
+  }
+}
+
+\newcommand{\resumeTitledItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+
+%-------------------------------------------
+
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://brxck.dev/}{\Large Brock McElroy}} & Email : \href{mailto:brxck@protonmail.com}{brxck@protonmail.com}\\
+  \href{https://brxck.dev/}{https://brxck.dev/} & Mobile : \href{tel:14804277830}{+1-480-427-7830} \\
+\end{tabular*}
+
+
+\section{Experience}
+  \resumeSubheading
+    {University of Arizona | Financial Services}{Tucson, AZ}
+    {Applications Systems Analyst/Developer (Technical Lead)}{Jul. 2019 | Present}
+    \begin{resumeList}
+      \resumeItem
+        {Leads development team in the design, development, and deployment of Python and JavaScript web applications}
+      \resumeItem
+        {Re-architected the university's \href{https://tuitioncalculator.fso.arizona.edu}{Tuition Calculator} to better accommodate an increasingly complex tuition structure}
+      \resumeItem
+        {Led design and development of a new application to manage and automate the creation of tuition rates (up to 15,000 per year), resulting in the fastest ever turnaround of a semester's tuition}
+      \resumeItem
+        {Rewrote Django applications using AWS Lambda serverless functions, reducing hosting costs by over 95\%}
+      \resumeItem
+        {Developed a drop-in replacement for the legacy purchasing-card audit platform, reducing application response times by 80\% on average}
+      \resumeItem
+        {Created continuous deployment workflows to build and deploy Docker images to shared virtual hosts, which save \$16,000 per year in application hosting}
+      \resumeItem
+        {Created serverless access management application using SAML and AWS Cognito, allowing single sign-on and unified authorization management independent of application platform}
+    \end{resumeList}
+
+  \resumeSubheading
+    {2U}{Tucson, AZ}
+    {Full-Stack Teaching Assistant | University of Arizona}{May 2019 | Jul. 2020}
+    \begin{resumeList}
+      \resumeItem
+        {Assisted instruction of full-stack web technologies (e.g. React, Express, Node.js, SQL, MongoDB) in a fast-paced, in-person coding bootcamp}
+      \resumeItem
+        {Prepared and presented lectures on fundamental version control concepts and Git usage}
+      \resumeItem
+        {Guided students through mock interview code challenges and the approaches to solving them}
+      \resumeItem
+        {Authored supplemental resource list to guide students toward continued learning after their graduation}
+      \resumeItem
+        {Provided constructive, motivating feedback on homework to improve student understanding and the resulting code}
+    \end{resumeList}
+
+
+\section{Projects}
+  \begin{resumeList}
+    \resumeTitledItem{Gojira}
+      {A GitHub application which creates an interface between GitHub and Jira issues. Expands issue cross-references and transitions issues via comment or pull request events. Provides a comfortable union between high-level project management items and technical development tasks. Built with TypeScript, Express, and Docker.}
+    \resumeTitledItem{\href{https://github.com/brxck/gatsby-starter-stripe}{gatsby-starter-stripe}}
+      {An open-source starter for a statically-generated, live-updated, serverless storefront and admin dashboard. Built-in inventory, cart, and checkout is integrated with Stripe for payment processing. Built with Gatsby, React, GraphQL, and AWS Lambda.}
+    \resumeTitledItem{\href{https://castaway.by.brxck.dev}{Castaway}}
+      {An app to discover, subscribe, and listen to podcasts. Features a responsive podcast player with variable playback speed and progress tracking. Built with Ruby, Rails, Docker, and StimulusJS.}
+    \resumeTitledItem{\href{https://brxck.github.io/lizard.js/}{lizard.js}}
+      {A configurable, procedurally animated, vector gecko follows the visitor's cursor using only web technologies: JavaScript and HTML Canvas. Vector geometry precludes the need for more complicated inverse kinematic math. Built with Alpine.js and paper.js.}
+  \end{resumeList}
+
+\section{Skills}
+  \begin{resumeList}
+    \resumeTitledItem{Languages}{JavaScript, TypeScript, Python, Ruby, SQL, GraphQL}
+    \resumeTitledItem{Technologies}{React, Vue, Django, Rails, Express, AWS, Git, GitLab CI, Tailwind CSS, fast.ai}
+  \end{resumeList}
+
+\section{Education}
+  \resumeSubheading
+  {University of Arizona}{Tucson, AZ}
+  {Bachelor of Science in Environmental Science}{Aug. 2012 | May 2017}
+
+\end{document}
