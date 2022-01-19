@@ -1,7 +1,10 @@
 % !TEX program = pdflatex
 
+% Adapted from https://github.com/sb2nov/resume
+
 \documentclass[letterpaper,11pt]{article}
 
+\usepackage{lmodern}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -45,7 +48,6 @@
 %-------------------------
 % Custom commands
 
-% Just in case someone needs a heading that does not need to be in a list
 \newcommand{\resumeHeading}[4]{
   \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & #2 \\
@@ -91,28 +93,36 @@
 
 \section{Experience}
   \resumeSubheading
-    {University of Arizona | Financial Services}{Tucson, AZ}
-    {Applications Systems Analyst/Developer (Technical Lead)}{Jul. 2019 | Present}
+    {Equips}{Remote}
+    {Full Stack Engineer}{Jul. 2021 | Present}
     \begin{resumeList}
       \resumeItem
-        {Leads development team in the design, development, and deployment of Python and JavaScript web applications}
+        {Design and implement new features using TypeScript, React, GraphQL, and AWS DynamoDB}
       \resumeItem
-        {Re-architected the university's \href{https://tuitioncalculator.fso.arizona.edu}{Tuition Calculator} to better accommodate an increasingly complex tuition structure}
+        {Created homepage dashboard to present customers concise views of essential info}
+      \resumeItem
+        {Architected the replatform of the Equips GraphQL API using PostgreSQL and GraphQL Nexus}
+    \end{resumeList}
+
+  \resumeSubheading
+    {University of Arizona | Financial Services}{Tucson, AZ}
+    {Applications Systems Analyst/Developer}{Jul. 2019 | Jul. 2021}
+    \begin{resumeList}
+      \resumeItem
+        {Lead development team in the design, development, and deployment of Python and JavaScript web applications}
+      \resumeItem
+        {Reimplemented the university's \href{https://tuitioncalculator.fso.arizona.edu}{Tuition Calculator} to better accommodate an increasingly complex tuition structure}
       \resumeItem
         {Led design and development of a new application to manage and automate the creation of tuition rates (up to 15,000 per year), resulting in the fastest ever turnaround of a semester's tuition}
       \resumeItem
         {Rewrote Django applications using AWS Lambda serverless functions, reducing hosting costs by over 95\%}
       \resumeItem
         {Developed a drop-in replacement for the legacy purchasing-card audit platform, reducing application response times by 80\% on average}
-      \resumeItem
-        {Created continuous deployment workflows to build and deploy Docker images to shared virtual hosts, which save \$16,000 per year in application hosting}
-      \resumeItem
-        {Created serverless access management application using SAML and AWS Cognito, allowing single sign-on and unified authorization management independent of application platform}
     \end{resumeList}
 
   \resumeSubheading
     {2U}{Tucson, AZ}
-    {Full-Stack Teaching Assistant | University of Arizona}{May 2019 | Jul. 2020}
+    {Teaching Assistant | University of Arizona}{May 2019 | Jul. 2020}
     \begin{resumeList}
       \resumeItem
         {Assisted instruction of full-stack web technologies (e.g. React, Express, Node.js, SQL, MongoDB) in a fast-paced, in-person coding bootcamp}
@@ -141,8 +151,8 @@
 
 \section{Skills}
   \begin{resumeList}
-    \resumeTitledItem{Languages}{JavaScript, TypeScript, Python, Ruby, SQL, GraphQL}
-    \resumeTitledItem{Technologies}{React, Vue, Django, Rails, Express, AWS, Git, GitLab CI, Tailwind CSS, fast.ai}
+    \resumeTitledItem{Languages}{TypeScript, JavaScript, Python, Ruby, SQL, GraphQL}
+    \resumeTitledItem{Technologies}{React, Vue, Django, Rails, Express, AWS, DynamoDB, ElasticSearch, Serverless, Git, GitLab CI}
   \end{resumeList}
 
 \section{Education}
