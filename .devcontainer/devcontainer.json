@@ -5,7 +5,6 @@
     "runServices": ["vscode"],
     "shutdownAction": "stopCompose",
     "workspaceFolder": "/workspace",
-    "postCreateCommand": "cp /workspace/vendor/GnuMICR-0.30/GnuMICR.otf ~/.fonts",
     "extensions": [
         "james-yu.latex-workshop",
         // Git
@@ -32,17 +31,6 @@
             "%DIR%/",
             "%TMPFILE%",
             "-y=\"defaultIndent: '%INDENT%',onlyOneBackUp: 1\"",
-        ],
-        "latex-workshop.latex.tools": [{
-            "name": "latexmk",
-            "command": "latexmk",
-            "args": [
-                "-xelatex",
-                "-synctex=1",
-                "-interaction=nonstopmode",
-                "-file-line-error",
-                "%DOC%"
-            ]
-        }],
+        ]
     }
 }
