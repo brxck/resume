@@ -56,7 +56,7 @@
   }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{5pt}
+  \vspace{6pt}
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & #2 \\
     \textit{\small#3} & \textit{\small #4} \\
@@ -94,14 +94,16 @@
 \section{Experience}
   \resumeSubheading
     {Equips}{Remote}
-    {Full Stack Engineer}{Jul. 2021 | Present}
+    {Full Stack Software Engineer}{Jul. 2021 | Present}
     \begin{resumeList}
       \resumeItem
-        {Design and implement new features using TypeScript, React, GraphQL, and AWS DynamoDB}
+        {Design and implement new features using TypeScript, React, GraphQL, and AWS Lambda}
       \resumeItem
-        {Created homepage dashboard to present customers concise views of essential info}
+        {Created homepage dashboard to improve marketability and present quick access to important actions and information}
       \resumeItem
-        {Architected the replatform of the Equips GraphQL API using PostgreSQL and GraphQL Nexus}
+        {Architected the replatform of the Equips GraphQL API using PostgreSQL, Prisma, and GraphQL Nexus}
+      \resumeItem
+        {Automated compilation, packaging, and deployment of TypeScript projects to an internal package repository}
     \end{resumeList}
 
   \resumeSubheading
@@ -139,20 +141,18 @@
 
 \section{Projects}
   \begin{resumeList}
-    \resumeTitledItem{Gojira}
-      {A GitHub application which creates an interface between GitHub and Jira issues. Expands issue cross-references and transitions issues via comment or pull request events. Provides a comfortable union between high-level project management items and technical development tasks. Built with TypeScript, Express, and Docker.}
-    \resumeTitledItem{\href{https://github.com/brxck/gatsby-starter-stripe}{gatsby-starter-stripe}}
-      {An open-source starter for a statically-generated, live-updated, serverless storefront and admin dashboard. Built-in inventory, cart, and checkout is integrated with Stripe for payment processing. Built with Gatsby, React, GraphQL, and AWS Lambda.}
-    \resumeTitledItem{\href{https://castaway.by.brxck.dev}{Castaway}}
-      {An app to discover, subscribe, and listen to podcasts. Features a responsive podcast player with variable playback speed and progress tracking. Built with Ruby, Rails, Docker, and StimulusJS.}
-    \resumeTitledItem{\href{https://brxck.github.io/lizard.js/}{lizard.js}}
-      {A configurable, procedurally animated, vector gecko follows the visitor's cursor using only web technologies: JavaScript and HTML Canvas. Vector geometry precludes the need for more complicated inverse kinematic math. Built with Alpine.js and paper.js.}
+    \resumeTitledItem{Digital Ghost Export | Contract}
+    {A Kibana extension, implemented with TypeScript and React, which allows data analysts to export and tag many ElasticSearch indices using a no-code, query-by-example user interface.}
+    \resumeTitledItem{\href{https://github.com/cursorless-dev/cursorless-vscode}{Cursorless Test Recorder | Open Source}}
+      {Contribution to the {\href{https://github.com/cursorless-dev/cursorless-vscode}{Cursorless}} project, a Visual Studio Code extension which enables complex code editing by voice. Allows developers to generate test cases by recording their actions and editor state to YAML test cases. The recorder plays back and asserts test cases with Jest.}
+    \resumeTitledItem{\href{https://github.com/brxck/gatsby-starter-stripe}{gatsby-starter-stripe | Open Source}}
+      {An open source starter for a statically-generated, live-updated, serverless storefront and admin dashboard. Built-in inventory, cart, and checkout is integrated with Stripe for payment processing. Built with Gatsby, React, GraphQL, and AWS Lambda.}
   \end{resumeList}
 
 \section{Skills}
   \begin{resumeList}
     \resumeTitledItem{Languages}{TypeScript, JavaScript, Python, Ruby, SQL, GraphQL}
-    \resumeTitledItem{Technologies}{React, Vue, Django, Rails, Express, AWS, DynamoDB, ElasticSearch, Serverless, Git, GitLab CI}
+    \resumeTitledItem{Technologies}{React, Vue, Django, Rails, Express, AWS, DynamoDB, Docker, Serverless, Git, GitLab CI}
   \end{resumeList}
 
 \section{Education}
